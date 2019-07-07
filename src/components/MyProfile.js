@@ -29,7 +29,7 @@ export default class MyProfile extends React.Component {
         >
           <img
             src={profileImg}
-            alt="profile image"
+            alt="profile"
             style={{
               width: 300,
               height: 300,

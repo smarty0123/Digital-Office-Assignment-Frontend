@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Card, CardTitle, CardText, CardImg } from "reactstrap";
+import { Card, CardTitle, CardText } from "reactstrap";
 
 export default class AllRestaurants extends React.Component {
   constructor() {
@@ -46,7 +46,7 @@ export default class AllRestaurants extends React.Component {
 
   render() {
     return (
-      <div classname="container" style={{ padding: 20 }}>
+      <div classname="container" style={{ padding: 20, minHeight: "100vh" }}>
         <h3>20 Restaurants in Bangsue area</h3>
         {this.state.isLoading ? (
           <h5>Loading...</h5>

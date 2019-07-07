@@ -37,6 +37,9 @@ export default class Header extends React.Component {
               <NavItem>
                 <NavLink href="/AllRestaurants">All Restaurants</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/MemoryRecorder">Memory Recorder</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
