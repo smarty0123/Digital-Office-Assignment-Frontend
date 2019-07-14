@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Card, CardTitle, CardText } from "reactstrap";
 
-export default class AllRestaurants extends React.Component {
+class AllRestaurants extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -85,3 +85,5 @@ export default class AllRestaurants extends React.Component {
     );
   }
 }
+
+export default AllRestaurants;

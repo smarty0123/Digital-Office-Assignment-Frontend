@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Card, CardText } from "reactstrap";
 
-export default class MemoryRecorder extends React.Component {
+class MemoryRecorder extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -51,8 +51,8 @@ export default class MemoryRecorder extends React.Component {
           <div>
             {Object.keys(this.state.memoryRecorder).map(data => (
               <Card style={{ marginBottom: 20 }}>
-                  <CardText>{this.state.memoryRecorder[data].date}</CardText>
-                  <CardText>{this.state.memoryRecorder[data].message}</CardText>
+                <CardText>{this.state.memoryRecorder[data].date}</CardText>
+                <CardText>{this.state.memoryRecorder[data].message}</CardText>
               </Card>
             ))}
           </div>
@@ -61,3 +61,5 @@ export default class MemoryRecorder extends React.Component {
     );
   }
 }
+
+export default MemoryRecorder;
